@@ -1,6 +1,7 @@
 import React from "react";
 import {
   MdOutlineKeyboardArrowUp,
+  MdOutlineKeyboardArrowDown,
   MdOutlinePerson,
   MdOutlineAccountBalance,
   MdOutlineShoppingCart,
@@ -11,14 +12,13 @@ const Widget = ({ type }) => {
   let data;
 
   // temporary data
-  let amount = 100;
-  let diff = 20;
-
   switch (type) {
     case "user":
       data = {
         title: "Users",
         isMoney: false,
+        amount: 100,
+        diff: -1.1,
         link: "See all users",
         icon: (
           <div className="self-end rounded-md bg-red-100 p-[5px] text-[20px] text-red-500">
@@ -31,6 +31,8 @@ const Widget = ({ type }) => {
       data = {
         title: "Orders",
         isMoney: false,
+        amount: 117,
+        diff: 2.1,
         link: "See all orders",
         icon: (
           <div className="self-end rounded-md bg-yellow-100 p-[5px] text-[20px] text-yellow-500">
@@ -43,6 +45,8 @@ const Widget = ({ type }) => {
       data = {
         title: "Earnings",
         isMoney: true,
+        amount: 314,
+        diff: 3.6,
         link: "See net earnings",
         icon: (
           <div className="self-end rounded-md bg-green-100 p-[5px] text-[20px] text-green-500">
@@ -55,6 +59,8 @@ const Widget = ({ type }) => {
       data = {
         title: "Balance",
         isMoney: true,
+        amount: 2973,
+        diff: -1.3,
         link: "See details",
         icon: (
           <div className="self-end rounded-md bg-purple-100 p-[5px] text-[20px] text-purple-500">
@@ -75,7 +81,7 @@ const Widget = ({ type }) => {
           {data.title}
         </span>
         <span className="text-[28px] font-medium text-gray-900">
-          {data.isMoney && "$"} {amount}
+          {data.isMoney && "$"} {data.amount.toLocaleString()}
         </span>
         <span className="w-max border-b border-gray-300 text-[12px] font-medium text-gray-900">
           {data.link}
@@ -83,10 +89,17 @@ const Widget = ({ type }) => {
       </div>
 
       <div className="flex flex-col justify-between">
-        <div className="percentage flex items-center text-[14px] font-medium text-green-500">
-          <MdOutlineKeyboardArrowUp className="text-[20px]" />
-          {diff}%
-        </div>
+        {data.diff > 0 ? (
+          <div className="flex items-center text-[14px] font-medium text-green-500">
+            <MdOutlineKeyboardArrowUp className="text-[20px]" />
+            {data.diff}%
+          </div>
+        ) : (
+          <div className="flex items-center text-[14px] font-medium text-red-500">
+            <MdOutlineKeyboardArrowDown className="text-[20px]" />
+            {data.diff}%
+          </div>
+        )}
 
         {data.icon}
       </div>
