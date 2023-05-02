@@ -19,14 +19,14 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="relative cursor-pointer rounded-md p-[3px] hover:bg-gray-100 focus:ring-[3px] focus:ring-purple-500">
+          <button className="relative cursor-pointer rounded-md p-[3px] hover:bg-gray-100 focus:ring-[3px] focus:ring-purple-600/50">
             <MdOutlineDarkMode className="text-[20px] text-gray-900" />
           </button>
-          <button className="relative cursor-pointer rounded-md p-[3px] hover:bg-gray-100 focus:ring-[3px] focus:ring-purple-500">
+          <button className="relative cursor-pointer rounded-md p-[3px] hover:bg-gray-100 focus:ring-[3px] focus:ring-purple-600/50">
             <MdOutlineNotifications className="text-[20px] text-gray-900" />
             {/* <div className="absolute right-1 top-1 h-2 w-2 rounded-full bg-red-500" /> */}
           </button>
-          <button className="relative cursor-pointer rounded-full focus:ring-[3px] focus:ring-purple-500">
+          <button className="relative cursor-pointer rounded-full focus:ring-[3px] focus:ring-purple-600/50">
             <div className="h-[36px] w-[36px] overflow-hidden rounded-full">
               <img
                 src="/assets/images/avatar_5.jpg"
