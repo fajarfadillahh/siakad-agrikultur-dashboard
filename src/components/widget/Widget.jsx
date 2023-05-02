@@ -75,7 +75,7 @@ const Widget = ({ type }) => {
   }
 
   return (
-    <div className="flex h-[120px] w-[200px] flex-1 justify-between rounded-md p-[10px] shadow-lg shadow-gray-200/50">
+    <div className="flex h-[120px] w-[200px] flex-1 justify-between rounded-md p-[10px] shadow-3xl">
       <div className="flex flex-col justify-between">
         <span className="text-[14px] font-bold uppercase text-gray-500">
           {data.title}
