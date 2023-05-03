@@ -4,17 +4,17 @@ import Paper from "@mui/material/Paper";
 import { DataGrid } from "@mui/x-data-grid";
 
 // import mock latets transactions data
-import userRows from "../../_mock/LatestTransactionData";
+import TransactionRows from "../../_mock/LatestTransactionData";
 
 // import components
-import userColumns from "./TableColumn";
+import TransactionColumns from "./TableColumn";
 
 const List = () => {
   return (
     <TableContainer component={Paper} sx={{ boxShadow: "none" }}>
       <DataGrid
-        rows={userRows}
-        columns={userColumns}
+        rows={TransactionRows}
+        columns={TransactionColumns}
         disableRowSelectionOnClick
         sx={{
           fontFamily: "Inter, sans-serif",

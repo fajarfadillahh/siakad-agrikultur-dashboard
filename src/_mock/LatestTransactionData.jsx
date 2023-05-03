@@ -1,4 +1,4 @@
-const data = [
+const TransactionRows = [
   {
     id: 1143155,
     product: "Acer Nitro 5",
@@ -51,4 +51,4 @@ const data = [
   },
 ];
 
-export default data;
+export default TransactionRows;
