@@ -10,7 +10,7 @@ import Table from "../../components/table/Table";
 
 const Home = () => {
   return (
-    <div className="flex">
+    <div className="flex w-full">
       <Sidebar />
 
       <div className="flex-[6]">
