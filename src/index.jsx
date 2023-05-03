@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
-// tailwind directives
+// tailwind directives & global css
 import "tailwindcss/tailwind.css";
+import "./assets/css/globals.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
