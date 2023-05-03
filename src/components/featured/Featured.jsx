@@ -33,7 +33,7 @@ const Featured = () => {
         <p className="font-medium text-gray-500">Total sales made today</p>
         <p className="text-[30px] font-semibold text-gray-900">$450</p>
         <p className="text-center text-[12px] text-gray-500  ">
-          Previous transactions processing. last payment may not be inclueded.
+          Previous transactions processing. Last payment may not be inclueded.
         </p>
 
         <div className="flex w-full items-center justify-between">
