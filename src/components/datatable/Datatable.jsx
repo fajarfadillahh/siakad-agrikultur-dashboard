@@ -5,7 +5,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import userRows from "../../_mock/DatatableRowData";
 
 // import components
-import userColumns from "../../components/datatable/DatatableColumn";
+import userColumns from "./DatatableColumn";
 
 const Datatable = () => {
   return (
