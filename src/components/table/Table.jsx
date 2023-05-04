@@ -19,6 +19,9 @@ const List = () => {
         sx={{
           fontFamily: "Inter, sans-serif",
           border: "none",
+          "& .MuiDataGrid-columnHeadersInner": {
+            width: "100%",
+          },
           "& .MuiDataGrid-footerContainer": {
             display: "none",
           },
