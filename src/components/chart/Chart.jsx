@@ -16,7 +16,7 @@ const Chart = () => {
   return (
     <div className="flex-[4] rounded-md p-[10px] shadow-3xl">
       <h1 className="mb-5 font-medium text-gray-500">
-        Total 6 Months (Revenue)
+        Total 6 Months (Active Users)
       </h1>
 
       <ResponsiveContainer width="100%" aspect={2 / 1}>
