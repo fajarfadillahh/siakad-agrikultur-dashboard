@@ -13,7 +13,7 @@ const Featured = () => {
   return (
     <div className="flex-[2] rounded-md p-[10px] shadow-3xl">
       <div className="flex items-center justify-between text-gray-500">
-        <h1 className="font-medium">Total Revenue</h1>
+        <h1 className="font-medium">Total Activity</h1>
         <MdOutlineMoreVert className="text-[20px]" />
       </div>
 
@@ -30,36 +30,36 @@ const Featured = () => {
             })}
           />
         </div>
-        <p className="font-medium text-gray-500">Total sales made today</p>
-        <p className="text-[30px] font-semibold text-gray-900">$450</p>
+        <p className="font-medium text-gray-500">Total user activity today</p>
+        <p className="text-[30px] font-semibold text-gray-900">470</p>
         <p className="text-center text-[12px] text-gray-500  ">
-          Previous transactions processing. Last payment may not be inclueded.
+          Past activity processing. The last activity may not be included.
         </p>
 
         <div className="flex w-full items-center justify-between">
-          <div className="text-center">
-            <h3 className="text-[14px] font-medium text-gray-500">Target</h3>
+          <div className="inline-flex flex-col items-center">
+            <h3 className="text-[14px] font-medium text-gray-500">Today</h3>
             <div className="mt-2 flex items-center text-red-500">
               <MdOutlineKeyboardArrowDown className="text-[20px]" />
-              <p className="text-[14px]">$12.5k</p>
+              <p className="text-[14px]">-1.2%</p>
             </div>
           </div>
 
-          <div className="text-center">
+          <div className="inline-flex flex-col items-center">
             <h3 className="text-[14px] font-medium text-gray-500">Last Week</h3>
             <div className="mt-2 flex items-center text-green-500">
               <MdOutlineKeyboardArrowUp className="text-[20px]" />
-              <p className="text-[14px]">$12.5k</p>
+              <p className="text-[14px]">2.7%</p>
             </div>
           </div>
 
-          <div className="text-center">
+          <div className="inline-flex flex-col items-center">
             <h3 className="text-[14px] font-medium text-gray-500">
               Last Month
             </h3>
             <div className="mt-2 flex items-center text-green-500">
               <MdOutlineKeyboardArrowUp className="text-[20px]" />
-              <p className="text-[14px]">$12.5k</p>
+              <p className="text-[14px]">3.1%</p>
             </div>
           </div>
         </div>
