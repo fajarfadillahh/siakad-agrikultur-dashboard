@@ -17,10 +17,10 @@ const Home = () => {
         <Navbar />
 
         <div className="flex gap-5 p-5">
-          <Widget type="user" />
-          <Widget type="order" />
-          <Widget type="earning" />
-          <Widget type="balance" />
+          <Widget type="inactive-users" />
+          <Widget type="infrequent-users" />
+          <Widget type="active-users" />
+          <Widget type="total-users" />
         </div>
 
         <div className="flex gap-5 p-5">

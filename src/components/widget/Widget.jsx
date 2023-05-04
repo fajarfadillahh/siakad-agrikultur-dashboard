@@ -7,17 +7,17 @@ import {
   MdOutlineShoppingCart,
   MdOutlineMonetizationOn,
 } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Widget = ({ type }) => {
   let data;
 
   // temporary data
   switch (type) {
-    case "user":
+    case "inactive-users":
       data = {
-        title: "Users",
-        isMoney: false,
-        amount: 100,
+        title: "Inactive Users",
+        amount: 127,
         diff: -1.1,
         link: "See all users",
         icon: (
@@ -27,13 +27,12 @@ const Widget = ({ type }) => {
         ),
       };
       break;
-    case "order":
+    case "infrequent-users":
       data = {
-        title: "Orders",
-        isMoney: false,
-        amount: 117,
+        title: "Infrequent Users",
+        amount: 108,
         diff: 2.1,
-        link: "See all orders",
+        link: "See all users",
         icon: (
           <div className="self-end rounded-md bg-yellow-100 p-[5px] text-[20px] text-yellow-500">
             <MdOutlineShoppingCart />
@@ -41,13 +40,12 @@ const Widget = ({ type }) => {
         ),
       };
       break;
-    case "earning":
+    case "active-users":
       data = {
-        title: "Earnings",
-        isMoney: true,
-        amount: 314,
+        title: "Active Users",
+        amount: 324,
         diff: 3.6,
-        link: "See net earnings",
+        link: "See all users",
         icon: (
           <div className="self-end rounded-md bg-green-100 p-[5px] text-[20px] text-green-500">
             <MdOutlineMonetizationOn />
@@ -55,13 +53,12 @@ const Widget = ({ type }) => {
         ),
       };
       break;
-    case "balance":
+    case "total-users":
       data = {
-        title: "Balance",
-        isMoney: true,
+        title: "Total Users",
         amount: 2973,
         diff: -1.3,
-        link: "See details",
+        link: "See all users",
         icon: (
           <div className="self-end rounded-md bg-purple-100 p-[5px] text-[20px] text-purple-500">
             <MdOutlineAccountBalance />
@@ -77,15 +74,18 @@ const Widget = ({ type }) => {
   return (
     <div className="flex h-[120px] w-[200px] flex-1 justify-between rounded-md p-[10px] shadow-3xl">
       <div className="flex flex-col justify-between">
-        <span className="text-[14px] font-bold uppercase text-gray-500">
+        <span className="text-[14px] font-bold capitalize text-gray-500">
           {data.title}
         </span>
         <span className="text-[28px] font-medium text-gray-900">
-          {data.isMoney && "$"} {data.amount.toLocaleString()}
+          {data.amount}
         </span>
-        <span className="w-max border-b border-gray-300 text-[12px] font-medium text-gray-900">
+        <Link
+          to="/users"
+          className="w-max border-b border-gray-300 text-[12px] font-medium text-gray-900"
+        >
           {data.link}
-        </span>
+        </Link>
       </div>
 
       <div className="flex flex-col justify-between">

@@ -13,6 +13,7 @@ import {
   MdOutlineAccountCircle,
   MdOutlineLogout,
 } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -28,94 +29,130 @@ const Sidebar = () => {
           <p className="pb-1 pt-4 text-[10px] font-bold uppercase text-gray-500">
             MAIN
           </p>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          <Link
+            to="/"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlineGridView className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               Dashboard
             </span>
-          </li>
+          </Link>
 
           <p className="pb-1 pt-4 text-[10px] font-bold uppercase text-gray-500">
             LISTS
           </p>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          <Link
+            to="/users"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlinePerson className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               Users
             </span>
-          </li>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          </Link>
+          <Link
+            to="/products"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlineStore className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               Products
             </span>
-          </li>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          </Link>
+          <Link
+            to="/orders"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlineCreditCard className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               Orders
             </span>
-          </li>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          </Link>
+          <Link
+            to="/delivery"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlineLocalShipping className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               Delivery
             </span>
-          </li>
+          </Link>
 
           <p className="pb-1 pt-4 text-[10px] font-bold uppercase text-gray-500">
             USEFUL
           </p>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          <Link
+            to="/stats"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlineInsertChart className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               Stats
             </span>
-          </li>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          </Link>
+          <Link
+            to="/notification"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlineNotifications className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               Notifications
             </span>
-          </li>
+          </Link>
 
           <p className="pb-1 pt-4 text-[10px] font-bold uppercase text-gray-500">
             SERVICES
           </p>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          <Link
+            to="/system-helth"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlineSettingsSystemDaydream className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               System Helth
             </span>
-          </li>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          </Link>
+          <Link
+            to="/logs"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlinePsychology className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               Logs
             </span>
-          </li>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          </Link>
+          <Link
+            to="/settings"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlineSettings className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               Settings
             </span>
-          </li>
+          </Link>
 
           <p className="pb-1 pt-4 text-[10px] font-bold uppercase text-gray-500">
             USERS
           </p>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          <Link
+            to="/profile"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlineAccountCircle className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               Profile
             </span>
-          </li>
-          <li className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100">
+          </Link>
+          <Link
+            to="/logout"
+            className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
+          >
             <MdOutlineLogout className="text-[20px] text-purple-600" />
             <span className="text text-[14px] font-semibold capitalize text-gray-900">
               Logout
             </span>
-          </li>
+          </Link>
         </ul>
       </div>
     </div>
