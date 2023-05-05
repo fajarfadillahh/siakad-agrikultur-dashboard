@@ -30,7 +30,7 @@ const Home = () => {
 
         <div className="m-5 rounded-md p-5 shadow-3xl">
           <h1 className="mb-5 font-medium capitalize text-gray-500">
-            Lates Transactions
+            Latest Activity Users
           </h1>
           <Table />
         </div>
