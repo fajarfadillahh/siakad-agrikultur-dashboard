@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const userColumns = [
   {
     field: "user",
@@ -56,9 +58,12 @@ const userColumns = [
     renderCell: () => {
       return (
         <div className="flex items-center gap-2 font-sans">
-          <div className="rounded-md bg-purple-600 px-2 py-1 font-medium text-white">
+          <Link
+            to="/users/123"
+            className="rounded-md bg-purple-600 px-2 py-1 font-medium text-white"
+          >
             View
-          </div>
+          </Link>
           <div className="rounded-md bg-red-500 px-2 py-1 font-medium text-white">
             Delete
           </div>
