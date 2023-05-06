@@ -1,4 +1,10 @@
 import { Link } from "react-router-dom";
+import {
+  MdOutlineRemoveRedEye,
+  MdOutlineEdit,
+  MdDeleteOutline,
+} from "react-icons/md";
+import { Tooltip } from "@mui/material";
 
 const userColumns = [
   {
@@ -57,16 +63,25 @@ const userColumns = [
     sortable: false,
     renderCell: () => {
       return (
-        <div className="flex items-center gap-2 font-sans">
-          <Link
-            to="/users/123"
-            className="rounded-md bg-purple-600 px-2 py-1 font-medium text-white"
-          >
-            View
-          </Link>
-          <div className="rounded-md bg-red-500 px-2 py-1 font-medium text-white">
-            Delete
-          </div>
+        <div className="flex items-center gap-2">
+          <Tooltip title="View" sx={{ fontFamily: "inherit" }}>
+            <Link
+              to="/users/123"
+              className="relative cursor-pointer rounded-md p-[3px] text-gray-500 hover:bg-purple-600 hover:text-white"
+            >
+              <MdOutlineRemoveRedEye className="text-[20px]" />
+            </Link>
+          </Tooltip>
+          <Tooltip title="Edit" sx={{ fontFamily: "inherit" }}>
+            <div className="relative cursor-pointer rounded-md p-[3px] text-gray-500 hover:bg-purple-600 hover:text-white">
+              <MdOutlineEdit className="text-[20px]" />
+            </div>
+          </Tooltip>
+          <Tooltip title="Delete" sx={{ fontFamily: "inherit" }}>
+            <div className="relative cursor-pointer rounded-md p-[3px] text-red-500 hover:bg-red-500 hover:text-white">
+              <MdDeleteOutline className="text-[20px]" />
+            </div>
+          </Tooltip>
         </div>
       );
     },
