@@ -10,7 +10,7 @@ import Table from "../../components/table/Table";
 const Home = () => {
   return (
     <Layout>
-      <div className="grid gap-8">
+      <div className="grid gap-5">
         <div className="flex flex-wrap gap-5">
           <Widget type="inactive-users" />
           <Widget type="infrequent-users" />
@@ -18,7 +18,7 @@ const Home = () => {
           <Widget type="total-users" />
         </div>
 
-        <div className="flex max-h-[424px] flex-col gap-5 lg:flex-row">
+        <div className="flex flex-col gap-5 lg:flex-row">
           <Featured />
           <Chart />
         </div>

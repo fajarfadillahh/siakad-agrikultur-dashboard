@@ -14,7 +14,7 @@ import data from "../../_mock/ChartData";
 
 const Chart = () => {
   return (
-    <div className="h-[424px] flex-1 rounded-md border border-gray-100 p-4 shadow-3xl">
+    <div className="flex-1 rounded-md border border-gray-100 p-4 shadow-3xl">
       <div className="grid gap-4">
         <h1 className="font-medium text-gray-500">
           Total 6 Months (Active Users)
