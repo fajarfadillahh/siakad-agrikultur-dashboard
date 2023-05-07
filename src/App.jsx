@@ -9,27 +9,21 @@ import Single from "./pages/single/Single";
 
 import Login from "./pages/login/Login";
 
+import Layout from "./components/layout/Layout";
+
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/">
-          <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
+        <Route path="/" element={<Layout />}>
+          {/* <Route index element={<Home />} /> */}
 
           {/* user page routes */}
-          <Route path="users">
-            <Route index element={<List />} />
+          {/* <Route path="users">
+            <Route index element={<Layout />} />
             <Route path=":userId" element={<Single />} />
             <Route path="new" element={<New />} />
-          </Route>
-
-          {/* product page routes */}
-          <Route path="products">
-            <Route index element={<List />} />
-            <Route path=":productId" element={<Single />} />
-            <Route path="new" element={<New />} />
-          </Route>
+          </Route> */}
         </Route>
       </Routes>
     </BrowserRouter>

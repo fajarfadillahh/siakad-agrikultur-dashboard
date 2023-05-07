@@ -1,7 +1,7 @@
 import React from "react";
 
 // import components
-import Sidebar from "../../components/sidebar/Sidebar";
+import Sidebar from "../../components/sidebar/SidebarMobile";
 import Navbar from "../../components/navbar/Navbar";
 import Datatable from "../../components/datatable/Datatable";
 
