@@ -3,9 +3,7 @@ import {
   MdOutlineKeyboardArrowUp,
   MdOutlineKeyboardArrowDown,
   MdOutlinePerson,
-  MdOutlineAccountBalance,
-  MdOutlineShoppingCart,
-  MdOutlineMonetizationOn,
+  MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -35,7 +33,7 @@ const Widget = ({ type }) => {
         link: "See all users",
         icon: (
           <div className="self-end rounded-md bg-yellow-100 p-[5px] text-[20px] text-yellow-500">
-            <MdOutlineShoppingCart />
+            <MdOutlinePerson />
           </div>
         ),
       };
@@ -48,7 +46,7 @@ const Widget = ({ type }) => {
         link: "See all users",
         icon: (
           <div className="self-end rounded-md bg-green-100 p-[5px] text-[20px] text-green-500">
-            <MdOutlineMonetizationOn />
+            <MdOutlinePerson />
           </div>
         ),
       };
@@ -61,7 +59,7 @@ const Widget = ({ type }) => {
         link: "See all users",
         icon: (
           <div className="self-end rounded-md bg-purple-100 p-[5px] text-[20px] text-purple-500">
-            <MdOutlineAccountBalance />
+            <MdOutlinePerson />
           </div>
         ),
       };
@@ -72,9 +70,9 @@ const Widget = ({ type }) => {
   }
 
   return (
-    <div className="flex h-[120px] w-[200px] flex-1 justify-between rounded-md p-[10px] shadow-3xl">
+    <div className="flex h-[120px] flex-1 justify-between rounded-md border border-gray-100 p-[10px] shadow-3xl">
       <div className="flex flex-col justify-between">
-        <span className="text-[14px] font-bold capitalize text-gray-500">
+        <span className="text-[12px] font-semibold uppercase text-gray-500">
           {data.title}
         </span>
         <span className="text-[28px] font-medium text-gray-900">
@@ -82,9 +80,10 @@ const Widget = ({ type }) => {
         </span>
         <Link
           to="/users"
-          className="w-max border-b border-gray-300 text-[12px] font-medium text-gray-900"
+          className="inline-flex items-center gap-0.5 text-[12px] font-medium text-gray-900 transition-all hover:gap-1.5 hover:text-purple-600"
         >
           {data.link}
+          <MdOutlineKeyboardArrowRight className="text-[1rem]" />
         </Link>
       </div>
 

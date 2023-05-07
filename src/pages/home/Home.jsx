@@ -10,15 +10,21 @@ import Table from "../../components/table/Table";
 const Home = () => {
   return (
     <Layout>
-      <div>home page</div>
-      {/* <div className="flex gap-5">
-        <Widget type="inactive-users" />
-        <Widget type="infrequent-users" />
-        <Widget type="active-users" />
-        <Widget type="total-users" />
+      <div className="grid gap-8">
+        <div className="flex flex-wrap gap-4">
+          <Widget type="inactive-users" />
+          <Widget type="infrequent-users" />
+          <Widget type="active-users" />
+          <Widget type="total-users" />
+        </div>
+
+        <div>
+          <p>Featured</p>
+          <p>Chart</p>
+        </div>
       </div>
 
-      <div className="flex gap-5 p-5">
+      {/* <div className="flex gap-5 p-5">
         <Featured />
         <Chart />
       </div>

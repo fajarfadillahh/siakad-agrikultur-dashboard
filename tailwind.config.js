@@ -7,7 +7,7 @@ export default {
         sans: ["Inter", "sans-serif"],
       },
       boxShadow: {
-        "3xl": "2px 6px 15px rgba(107,114,128,0.1)",
+        "3xl": "2px 6px 15px rgba(107,114,128,0.06)",
       },
     },
   },
