@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
       <div className="flex w-full flex-1 flex-col">
         <Navbar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
-        <div className="h-full overflow-y-auto p-5">{children}</div>
+        <main className="h-full overflow-y-auto p-5">{children}</main>
       </div>
     </div>
   );

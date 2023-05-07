@@ -1,18 +1,17 @@
 import React from "react";
 
 // import components
-import Sidebar from "../../components/sidebar/SidebarMobile";
-import Navbar from "../../components/navbar/Navbar";
+import Layout from "../../components/layout/Layout";
 import Widget from "../../components/widget/Widget";
 import Featured from "../../components/featured/Featured";
 import Chart from "../../components/chart/Chart";
 import Table from "../../components/table/Table";
-import Layout from "../../components/layout/Layout";
 
 const Home = () => {
   return (
     <Layout>
-      <div className="flex gap-5 p-5">
+      <div>home page</div>
+      {/* <div className="flex gap-5">
         <Widget type="inactive-users" />
         <Widget type="infrequent-users" />
         <Widget type="active-users" />
@@ -29,7 +28,7 @@ const Home = () => {
           Latest Activity Users
         </h1>
         <Table />
-      </div>
+      </div> */}
     </Layout>
   );
 };
