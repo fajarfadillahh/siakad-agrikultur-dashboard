@@ -22,14 +22,16 @@ const Home = () => {
           <Featured />
           <Chart />
         </div>
-      </div>
 
-      {/* <div className="m-5 rounded-md p-5 shadow-3xl">
-        <h1 className="mb-5 font-medium capitalize text-gray-500">
-          Latest Activity Users
-        </h1>
-        <Table />
-      </div> */}
+        <div className="grid gap-4 rounded-md border border-gray-100 p-5 shadow-3xl">
+          <h1 className="font-medium capitalize text-gray-500">
+            Latest Activity Users
+          </h1>
+          <div className="overflow-x-auto">
+            <Table />
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };

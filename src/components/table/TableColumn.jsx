@@ -1,6 +1,6 @@
 const TransactionColumns = [
   {
-    width: 250,
+    width: 260,
     field: "user",
     headerName: "User",
     renderCell: (params) => {
@@ -21,11 +21,11 @@ const TransactionColumns = [
       );
     },
   },
-  { width: 250, field: "email", headerName: "Email" },
+  { width: 260, field: "email", headerName: "Email" },
   { width: 150, field: "date", headerName: "Date" },
-  { width: 280, field: "address", headerName: "Address" },
+  { width: 260, field: "address", headerName: "Address" },
   {
-    width: 120,
+    width: 80,
     field: "status",
     headerName: "Status",
     renderCell: (params) => {
