@@ -79,7 +79,7 @@ const SidebarContent = () => {
           </span>
         </Link>
         <Link
-          to="/notification"
+          to="/notifications"
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineNotifications className="text-[20px] text-purple-600" />
