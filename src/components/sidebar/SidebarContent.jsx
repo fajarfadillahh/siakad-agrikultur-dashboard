@@ -110,7 +110,7 @@ const SidebarContent = () => {
           </span>
         </Link>
         <Link
-          to="/logout"
+          to="/login"
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineLogout className="text-[20px] text-purple-600" />
