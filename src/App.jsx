@@ -2,18 +2,18 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import main pages
-import Home from "./pages/home/Home";
-import Users from "./pages/list/List";
-import Swiper from "./pages/swiper/Swiper";
-import Information from "./pages/information/Information";
-import Stats from "./pages/stats/Stats";
-import Notification from "./pages/notification/Notification";
-import Setting from "./pages/setting/Setting";
-import Profile from "./pages/profile/Profile";
+import Home from "./pages/admin/Home";
+import Users from "./pages/admin/List";
+import Swiper from "./pages/admin/Swiper";
+import Information from "./pages/admin/Information";
+import Stats from "./pages/admin/Stats";
+import Notifications from "./pages/admin/Notifications";
+import Settings from "./pages/admin/Settings";
+import Profile from "./pages/admin/Profile";
 
 // import login & register pages
-import Login from "./pages/login/Login";
-import Register from "./pages/register/Register";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const App = () => {
   return (
@@ -25,8 +25,8 @@ const App = () => {
         <Route path="/swiper" element={<Swiper />} />
         <Route path="/Information" element={<Information />} />
         <Route path="/Stats" element={<Stats />} />
-        <Route path="/notifications" element={<Notification />} />
-        <Route path="/settings" element={<Setting />} />
+        <Route path="/notifications" element={<Notifications />} />
+        <Route path="/settings" element={<Settings />} />
         <Route path="/profile" element={<Profile />} />
 
         {/* login & register page */}

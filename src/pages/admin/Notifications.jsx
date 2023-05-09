@@ -3,8 +3,8 @@ import React from "react";
 // import components
 import Layout from "../../components/layout/Layout";
 
-const Setting = () => {
-  return <Layout>Setting</Layout>;
+const Notifications = () => {
+  return <Layout>Notifications</Layout>;
 };
 
-export default Setting;
+export default Notifications;
