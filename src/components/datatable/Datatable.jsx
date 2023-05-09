@@ -9,7 +9,7 @@ import userColumns from "./DatatableColumn";
 
 const Datatable = () => {
   return (
-    <div className="h-[calc(100vh-70px)] p-5">
+    <div className="block overflow-x-auto">
       <DataGrid
         rows={userRows}
         columns={userColumns}
@@ -23,6 +23,7 @@ const Datatable = () => {
         disableRowSelectionOnClick
         sx={{
           fontFamily: "Inter, sans-serif",
+          borderColor: "transparent",
           "& .MuiDataGrid-columnHeadersInner": {
             width: "100%",
           },

@@ -23,9 +23,7 @@ const List = () => {
           </button>
         </div>
 
-        <div className="overflow-x-auto">
-          <Datatable />
-        </div>
+        <Datatable />
       </div>
     </Layout>
   );

@@ -48,7 +48,7 @@ const SidebarContent = () => {
           </span>
         </Link>
         <Link
-          to="/products"
+          to="/swiper"
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineCollections className="text-[20px] text-purple-600" />
@@ -57,7 +57,7 @@ const SidebarContent = () => {
           </span>
         </Link>
         <Link
-          to="/orders"
+          to="/information"
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineAssignment className="text-[20px] text-purple-600" />
