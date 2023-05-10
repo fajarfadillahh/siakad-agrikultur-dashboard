@@ -1,7 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
+
+  const handleNavigateBtn = (e) => {
+    e.preventDefault();
+    navigate("/");
+  };
+
   return (
     <div className="flex h-screen w-full items-center justify-center overflow-hidden px-4">
       <div className="relative grid h-max w-max justify-center gap-6 rounded-md border border-purple-100/60 bg-white p-12 shadow-3xl">
@@ -62,7 +69,7 @@ const Register = () => {
 
         <button
           className="flex h-[42px] items-center justify-center rounded-md bg-purple-600 py-3 font-semibold text-white hover:bg-purple-700"
-          onClick={(e) => e.preventDefault()}
+          onClick={handleNavigateBtn}
         >
           Create Account
         </button>
