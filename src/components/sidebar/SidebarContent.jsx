@@ -30,7 +30,7 @@ const SidebarContent = () => {
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineGridView className="text-[20px] text-purple-600" />
-          <span className="text text-[14px] font-semibold capitalize text-gray-900">
+          <span className="text-[14px] font-semibold capitalize text-gray-900">
             Dashboard
           </span>
         </Link>
@@ -43,7 +43,7 @@ const SidebarContent = () => {
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlinePerson className="text-[20px] text-purple-600" />
-          <span className="text text-[14px] font-semibold capitalize text-gray-900">
+          <span className="text-[14px] font-semibold capitalize text-gray-900">
             Users
           </span>
         </Link>
@@ -52,7 +52,7 @@ const SidebarContent = () => {
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineCollections className="text-[20px] text-purple-600" />
-          <span className="text text-[14px] font-semibold capitalize text-gray-900">
+          <span className="text-[14px] font-semibold capitalize text-gray-900">
             Swiper
           </span>
         </Link>
@@ -61,7 +61,7 @@ const SidebarContent = () => {
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineAssignment className="text-[20px] text-purple-600" />
-          <span className="text text-[14px] font-semibold capitalize text-gray-900">
+          <span className="text-[14px] font-semibold capitalize text-gray-900">
             Information
           </span>
         </Link>
@@ -74,7 +74,7 @@ const SidebarContent = () => {
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineInsertChart className="text-[20px] text-purple-600" />
-          <span className="text text-[14px] font-semibold capitalize text-gray-900">
+          <span className="text-[14px] font-semibold capitalize text-gray-900">
             Stats
           </span>
         </Link>
@@ -83,7 +83,7 @@ const SidebarContent = () => {
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineNotifications className="text-[20px] text-purple-600" />
-          <span className="text text-[14px] font-semibold capitalize text-gray-900">
+          <span className="text-[14px] font-semibold capitalize text-gray-900">
             Notifications
           </span>
         </Link>
@@ -92,7 +92,7 @@ const SidebarContent = () => {
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineSettings className="text-[20px] text-purple-600" />
-          <span className="text text-[14px] font-semibold capitalize text-gray-900">
+          <span className="text-[14px] font-semibold capitalize text-gray-900">
             Settings
           </span>
         </Link>
@@ -105,7 +105,7 @@ const SidebarContent = () => {
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineAccountCircle className="text-[20px] text-purple-600" />
-          <span className="text text-[14px] font-semibold capitalize text-gray-900">
+          <span className="text-[14px] font-semibold capitalize text-gray-900">
             Profile
           </span>
         </Link>
@@ -114,7 +114,7 @@ const SidebarContent = () => {
           className="flex cursor-pointer items-center gap-1 rounded-md p-[6px] hover:bg-gray-100"
         >
           <MdOutlineLogout className="text-[20px] text-purple-600" />
-          <span className="text text-[14px] font-semibold capitalize text-gray-900">
+          <span className="text-[14px] font-semibold capitalize text-gray-900">
             Logout
           </span>
         </Link>
